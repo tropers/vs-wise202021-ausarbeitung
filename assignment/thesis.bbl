@@ -1,0 +1,25 @@
+\begin{thebibliography}{2}
+% this bibliography was produced with the style dinat.bst v2.5
+\makeatletter
+\newcommand{\dinatlabel}[1]%
+{\ifNAT@numbers\else\NAT@biblabelnum{#1}\hspace{2\labelsep}\fi}
+\makeatother
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
+
+\bibitem[Lamport(1978)]{lamport}
+\dinatlabel{Lamport 1978} \textsc{Lamport}, Leslie:
+\newblock Time, Clocks, and the Ordering of Events in a Distributed System.
+\newblock In: \emph{Communications of the ACM}
+\newblock (1978)
+
+\bibitem[Tanenbaum und van Steen(2018)]{tanenbaumvansteen}
+\dinatlabel{Tanenbaum und van Steen 2018} \textsc{Tanenbaum}, Andrew~S.~;
+  \textsc{Steen}, Marten van:
+\newblock \emph{Distributed Systems 3rd edition}.
+\newblock Maarten van Steen, 2018. --
+\newblock URL \url{https://www.distributed-systems.net/index.php/books/ds3/}.
+  --
+\newblock ISBN 978-90-815406-2-9
+
+\end{thebibliography}
