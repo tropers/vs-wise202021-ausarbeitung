@@ -5,15 +5,17 @@
 
 In der Aufgabenstellung sind Anforderungen an die RPC-Architektur formuliert.
 Zunächst werden diese analysiert und hier zusammengefasst.
-Die Anforderungen lassen sich in die nichtfunktionalen (Transparenzziele, Skalierung \cite{tanenbaumvansteen}) und funktionale (Architektur, Design und Software-Features) unterteilen.\\
-Bei den nichtfunktionalen Anforderungen wurde ein hoher Grad an Transparenz gefordert.
+Die Anforderungen umfassen die Transparenzziele, Skalierung \cite{tanenbaumvansteen}) sowie Anforderungen
+an die Umsetzung und Architektur.\\
+Es wurde ein hoher Grad an Transparenz gefordert.
 Die Transparenzziele umfassen die Access-Transparency, Location-Transparency, Relocation-Transparency,
-Migration-Transparency, Replication-Transparency, Concurrency-Transparency und Failure-Transparency \citep{tanenbaumvansteen}.\\
+Migration-Transparency, Replication-Transparency, Concurrency-Transparency und Failure-Transparency \citep{tanenbaumvansteen}.
 Die Skalierung beschränkt sich administrativ auf einen Administrator, der auch gleichzeitig
 Benutzer des Systems ist sowie geographisch auf einen Rechner, auf dem alle Nodes 
 \citep{tanenbaumvansteen} über das Loopback-Interface der Netzwerkkarte miteinander kommunizieren.
 Somit entfällt die Concurrency-Transparency, da nur ein Nutzer am System beteiligt ist sowie die
-Location-Transparency, Relocation- und Migration-Transparency, da alle Nodes auf einem Rechner
-als eigenständige Prozesse laufen. Die Replication-Transparency ist in diesem Zusammenhang uninteressant,
-da jede Node im System eindeutig identifizierbar ist, was Replikationen der Nodes für die
-Funktionsweise der verwendeten Algorithmen ausschließt.
+Location-Transparency, Relocation- und Migration-Transparency, da alle Nodes über das Loopback-Interface
+kommunizieren, welches auf eine Netzwerkkarte beschränkt ist. Die Replication-Transparency ist in diesem Zusammenhang 
+uninteressant, da jede Node im System eindeutig identifizierbar ist,was Replikationen der Nodes für die Funktionsweise 
+der verwendeten Algorithmen ausschließt.\\\\
+Desweiteren 
