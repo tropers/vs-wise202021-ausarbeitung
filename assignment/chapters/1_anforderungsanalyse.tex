@@ -3,6 +3,7 @@
 %
 \chapter{Anforderungsanalyse}
 
+\section{Requirements}
 In der Aufgabenstellung sind Anforderungen an die RPC-Architektur formuliert.
 Zunächst werden diese analysiert und hier zusammengefasst.
 Die Anforderungen umfassen die Transparenzziele, Skalierung \cite{tanenbaumvansteen}) sowie Anforderungen
@@ -55,7 +56,7 @@ Daraus ergeben sich folgende Anforderungen:
  \hline
 \end{tabular}
 \caption{Requirement Registrierung}
-\label{table:1}
+\label{table:reqregister}
 \end{center}
 \end{table}
 
@@ -79,7 +80,7 @@ Daraus ergeben sich folgende Anforderungen:
  \hline
 \end{tabular}
 \caption{Requirement Schweißen (Welding)}
-\label{table:2}
+\label{table:reqwelding}
 \end{center}
 \end{table}
 
@@ -103,7 +104,7 @@ Daraus ergeben sich folgende Anforderungen:
  \hline
 \end{tabular}
 \caption{Requirement Bestimmung eines Zyklus}
-\label{table:3}
+\label{table:reqchoosecycle}
 \end{center}
 \end{table}
 
@@ -125,7 +126,77 @@ Daraus ergeben sich folgende Anforderungen:
  \hline
 \end{tabular}
 \caption{Requirement Logging}
-\label{table:4}
+\label{table:reqlogging}
 \end{center}
 \end{table}
 
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |p{2.5cm}|p{11cm}| } 
+ \hline
+ Requirement & Randbedingungen des Prozessablaufs \\
+ \hline
+ Beschreibung &
+ \begin{itemize}
+  \item Nach dem Ablauf des Experiments sollen alle Roboter mindestens 20 Schweißpunkte
+  gesetzt haben oder sich in einem Fehlerzustand befinden.
+  \item Kein Roboter darf mehr als drei Schweißpunkte als ein anderer gesetzt haben.
+  \item Die Anzahl der teilnehmenden Nodes (Roboter) liegt zwischen drei und 16.
+ \end{itemize} \\
+ \hline
+\end{tabular}
+\caption{Requirement Prozessbedingungen}
+\label{table:reqprocess}
+\end{center}
+\end{table}
+
+\clearpage
+
+\section{UseCase}
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |p{2.8cm}|p{11cm}| } 
+ \hline
+ UseCase & Prozessablauf mit mindestens drei Robotern \\
+ \hline
+ ID & UC01 \\
+ \hline
+ Beschreibung & Dieser UseCase schildert einen Prozessablauf von mindestens drei Robotern, wie
+ er im Experiment durchgeführt wurde. \\
+ \hline
+ Vorbedingungen & Mindestens drei Roboter und der Logger werden hochgefahren.\\
+ \hline
+ Hauptszenario & 
+ \begin{enumerate}
+  \item Alle Roboter registrieren sich gegenseitig.
+  \item Ein Zyklus wird bestimmt.
+  \item Alle Roboter, welche im Zyklus ausgewählt wurden,\newline schweißen nacheinander.
+  \item Ein neuer Zyklus wird bestimmt.
+  \item Wiederholen ab Punkt 2.
+ \end{enumerate} \\
+ \hline
+ Alternative Szenarien &
+ A1: \newline
+ \begin{enumerate}
+  \setcounter{enumi}{3}
+  \item Ein Roboter ist in den Fehlerzustand gewechselt.
+  \item Versuch neuen Zyklus zu bestimmen und zu schweißen.
+ \end{enumerate}  \\
+ \hline
+ Fehlerszenarien & 
+ E1: \newline
+ \begin{enumerate}
+   \setcounter{enumi}{2}
+   \item Schweißaufträge im Zyklus können nicht abgeschlossen werden.
+   \item System geht in Fehlerzustand.
+ \end{enumerate} \\
+ \hline
+ Nachbedingung & Alle Roboter haben mindestens 20 Schweißpunkte gesetzt oder sind in einem Fehlerzustand. \\
+ \hline
+ Ergebnis & Das Experiment wurde erfolgreich beendet und alles wurde geloggt. \\ 
+ \hline
+\end{tabular}
+\caption{UseCase Prozessablauf mit mindestens drei Robotern}
+\label{table:usecase1}
+\end{center}
+\end{table}
