@@ -33,10 +33,11 @@ Insgesamt soll kein Roboter mehr als drei Schweißpuntke mehr als ein anderer ge
 Alle Roboter sollen am Ende eines Experiemntablaufs mindestens 20 Schweißpunkte gesetzt haben.
 In 99\% soll ein Roboter nach einem Schweißvorgang weiterhin betriebsbereit sein. Im Umkehrschluss
 ist ein Roboter in 1\% der Fälle nach einem Schweißvorgang nicht mehr betriebsbereit.\\
+Zur Auswertung und Beobachtung des Ablaufs soll jeder Roboter seinen Ablauf loggen.
 Daraus ergeben sich folgende Anforderungen:
 
+\begin{table}[h!]
 \begin{center}
-Registrierung \\
 \begin{tabular}{ |p{2.5cm}|p{11cm}| } 
  \hline
  Requirement & Registrierung eines Nodes im System \\
@@ -53,16 +54,19 @@ Registrierung \\
  registrierende Node. \\
  \hline
 \end{tabular}
+\caption{Requirement Registrierung}
+\label{table:1}
 \end{center}
+\end{table}
 
+\begin{table}[h!]
 \begin{center}
-Schweißen (Welding) \\
 \begin{tabular}{ |p{2.5cm}|p{11cm}| } 
  \hline
  Requirement & Ein Roboter versucht zu schweißen \\
  \hline
  Beschreibung & Ein Roboter einer Node möchte Zugriff auf die Ressource haben und einen Schweißauftrag
- ausführen. \\
+ ausführen. Sobald die Ressource verfügbar ist, soll der Roboter seinen Schweißauftrag ausführen.\\
  \hline
  Eingaben & / \\
  \hline
@@ -70,7 +74,58 @@ Schweißen (Welding) \\
  \hline
  Vorbedingung & Die Node sowie der Roboter der Node ist hochgefahren und betriebsbereit. \\
  \hline
- Nachbedingung & Der Roboter hat einen Schweißvorgang abgeschlossen. \\
+ Nachbedingung & Der Roboter hat einen Schweißvorgang abgeschlossen und geht entweder in einen Fehlerzustand
+ (in 1\% der Fälle) oder bleibt betriebsbereit. \\
  \hline
 \end{tabular}
+\caption{Requirement Schweißen (Welding)}
+\label{table:2}
 \end{center}
+\end{table}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |p{2.5cm}|p{11cm}| } 
+ \hline
+ Requirement & Bestimmung eines Zyklus \\
+ \hline
+ Beschreibung & Es muss sichergestellt sein, dass immer genau drei Roboter pro Zyklus einen
+ Schweißauftrag ausführen. \\
+ \hline
+ Eingaben & / \\
+ \hline
+ Ziel & Ein Zyklus wird bestimmt und drei Roboter können schweißen. \\
+ \hline
+ Vorbedingung & Alle am Experiment teilnehmenden Nodes sowie dazugehörige Roboter sind
+ hochgefahren und betriebsbereit. \\
+ \hline
+ Nachbedingung & Ein Zyklus wurde bestimmt und drei Nodes haben den Schweißauftrag erhalten. \\
+ \hline
+\end{tabular}
+\caption{Requirement Bestimmung eines Zyklus}
+\label{table:3}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |p{2.5cm}|p{11cm}| } 
+ \hline
+ Requirement & Logging der Prozessabläufe \\
+ \hline
+ Beschreibung & Jede Node muss seinen Zustand und die Abläufe loggen. \\
+ \hline
+ Eingaben & logText: String; Event oder Zustand \\
+ \hline
+ Ziel & Ein Event oder Zustand des Nodes wurde geloggt. \\
+ \hline
+ Vorbedingung & Die Node sowie der Roboter der Node ist hochgefahren und betriebsbereit. \\
+ \hline
+ Nachbedingung & Der Zustand der Node oder das Event wurden erfolgreich geloggt. \\
+ \hline
+\end{tabular}
+\caption{Requirement Logging}
+\label{table:4}
+\end{center}
+\end{table}
+
