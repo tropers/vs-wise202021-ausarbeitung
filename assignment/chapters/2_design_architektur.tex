@@ -19,17 +19,39 @@ konfigurierte Konfiguration.
 
 Das System besteht aus einer RPC-Architektur und einer Robotersimulation. Die RPC-Architektur ermöglicht
 die Kommunikation und Steuerung der Abläufe der Roboter untereinander und dient damit als Basis der
-Architektur.
+Architektur. Alle Nodes laufen auf einem Rechner, laufen also jeder auf einem Port.
+Um den Bereich abzustecken, in dem die Nodes laufen wird in der Konfiugration ein Portbereich mitgegeben.
+Dieser Bereich dient auch der Kommunikation der Roboter. Über den Portbereich lassen sich Nachrichten
+als Broadcast an jeden Port verschicken.
+
+\subsection{Registrierung eines Roboters}
+
+Die Roboter registrieren sich gegenseitig wenn das System hochgefahren wird. Sobald eine Node hochgefahren
+wird, wird ein Broadcast auf dem Portbereich getätigt, damit wird jeder Roboter mit jedem bekanntgemacht
+bevor die Wahl des Koordinators und Bestimmung des Zyklus losgeht. Somit hat man eine vollvermaschte
+Peer-To-Peer Topologie.
 
 \subsection{Bestimmung eines Zyklus}
 
 Da die Nodes im System unabhängig von einer zentralen Einheit (bis auf Erhebung von Experimentdaten)
 in einem Peer-To-Peer \citep{tanenbaumvansteen} Verbund existieren, muss zur Bestimmtung 
-eines Zyklus eine Node die Rolle eines Koordinators \citep{tanenbaumvansteen} übernehmen, welcher den Zyklus bestimmmt.
+eines Zyklus eine Node die Rolle des Koordinators \citep{tanenbaumvansteen} übernehmen, welcher den Zyklus bestimmmt.\\
+Zur Bestimmung des Koordinators wird zu Beginn des Experiments der Bully-Algorithmus \citep{tanenbaumvansteen}
+als Wahlalgorithmus verwendet, bei diesem wird über die ID der Roboter bestimmt wer als
+Koordinator gewählt wird.
 
 \subsection{Schweißvorgang (Welding)}
 
+Um den Schweißvorgang selbst zu simulieren wird beim welding() call in einer Node ein Thread gestartet,
+der eine konfigurierte Zeit wartet um die mechanische Bewegung und das Schweißen selber der Roboters
+mindestens zeitlich zu simulieren. Zusätzlich wird über die Konsole sowie in der Log-Datei eine Nachricht
+ausgegeben, welche auf den Schweißvorgang hinweist.
+
 \subsection{Logging der Prozessabläufe}
+
+Um das Logging der verschiedenen Abläufe und Zustände sicherzustellen wurde ein Loggin-Server implementiert,
+welcher selbst über eine RPC Schnittstelle verfügt, auf welcher Log-Nachrichten der einzelnen Nodes übertragen
+werden können.
 
 \section{Gesamtsystem}
 
