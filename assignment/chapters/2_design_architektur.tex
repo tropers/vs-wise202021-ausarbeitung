@@ -2,3 +2,41 @@
 % @author Tristan Ropers
 %
 \chapter{Design \& Architektur}
+
+Zur Umsetzung der Anforderungen wurde eine RPC-Architektur entwickelt, die es ermöglicht den Prozess
+abzubilden. Im folgenden Kapitel wird diese Architektur vorgestellt sowie ihre Besonderheiten.
+
+\section{Systemkontext}
+
+\includenamedimage[0.9]{../diagrams/1_systemkontext.png} {Systemkontext}
+
+Der Systemkontext des Gesamtsystems umfasst den Nutzer, welcher gleichzeitig Administrator ist und das
+Gesamtsystem. Der Nutzer konfiguriert das System und startet im Anschluss die zuvor
+konfigurierte Konfiguration.
+\clearpage
+
+\section{Lösungsstrategie}
+
+Das System besteht aus einer RPC-Architektur und einer Robotersimulation. Die RPC-Architektur ermöglicht
+die Kommunikation und Steuerung der Abläufe der Roboter untereinander und dient damit als Basis der
+Architektur.
+
+\subsection{Bestimmung eines Zyklus}
+
+Da die Nodes im System unabhängig von einer zentralen Einheit (bis auf Erhebung von Experimentdaten)
+in einem Peer-To-Peer \citep{tanenbaumvansteen} Verbund existieren, muss zur Bestimmtung 
+eines Zyklus eine Node die Rolle eines Koordinators \citep{tanenbaumvansteen} übernehmen, welcher den Zyklus bestimmmt.
+
+\subsection{Schweißvorgang (Welding)}
+
+\subsection{Logging der Prozessabläufe}
+
+\section{Gesamtsystem}
+
+
+
+Eine zentrale Rolle in der Architektur spielt der Roboter, er beinhaltet Kommunikationselemente (Stubs 
+\citep{tanenbaumvansteen} zu den anderen Robotern), eine Statemachine sowie eine Simulation des
+Schweißvorgangs.
+
+\section{Ebenen}
