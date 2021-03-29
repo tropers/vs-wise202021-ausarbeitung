@@ -1,4 +1,4 @@
-% first example chapter
+% Anforderungsanalyse
 % @author Tristan Ropers
 %
 \chapter{Anforderungsanalyse}
@@ -18,4 +18,59 @@ Location-Transparency, Relocation- und Migration-Transparency, da alle Nodes üb
 kommunizieren, welches auf eine Netzwerkkarte beschränkt ist. Die Replication-Transparency ist in diesem Zusammenhang 
 uninteressant, da jede Node im System eindeutig identifizierbar ist,was Replikationen der Nodes für die Funktionsweise 
 der verwendeten Algorithmen ausschließt.\\\\
-Desweiteren 
+Desweiteren ist ein Minimalset an Funktionen an die RPC-Architektur gefordert:
+\begin{itemize}
+  \item void register(int id)
+  \item void welding()
+  \item void setStatus(int status)
+\end{itemize}
+\newpage
+Es soll kein zentrales System, bis auf Erfassung von Daten zu Experimentabläufen, am Gesamtsystem beteiligt
+sein.
+Alle beteiligten Nodes (Roboter) sollen sich auf einen Zyklus einigen, in dem immer drei Roboter nacheinander
+(Reihenfolge durch Lamport) schweißen.
+Insgesamt soll kein Roboter mehr als drei Schweißpuntke mehr als ein anderer gesetzt haben.
+Alle Roboter sollen am Ende eines Experiemntablaufs mindestens 20 Schweißpunkte gesetzt haben.
+In 99\% soll ein Roboter nach einem Schweißvorgang weiterhin betriebsbereit sein. Im Umkehrschluss
+ist ein Roboter in 1\% der Fälle nach einem Schweißvorgang nicht mehr betriebsbereit.\\
+Daraus ergeben sich folgende Anforderungen:
+
+\begin{center}
+Registrierung \\
+\begin{tabular}{ |p{2.5cm}|p{11cm}| } 
+ \hline
+ Requirement & Registrierung eines Nodes im System \\
+ \hline
+ Beschreibung & Ein Node kann sich im System mit allen anderen Nodes bekannt machen. \\
+ \hline
+ Eingaben & id: int; eindeutige ID für den Node \\
+ \hline
+ Ziel & Die Node hat sich mit allen anderen im System bekanntgemacht. \\
+ \hline
+ Vorbedingung & Die Node ist hochgefahren und betriebsbereit. \\
+ \hline
+ Nachbedingung & Die Node kennt alle anderen Nodes im System und alle anderen Nodes kennen die sich 
+ registrierende Node. \\
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+Schweißen (Welding) \\
+\begin{tabular}{ |p{2.5cm}|p{11cm}| } 
+ \hline
+ Requirement & Ein Roboter versucht zu schweißen \\
+ \hline
+ Beschreibung & Ein Roboter einer Node möchte Zugriff auf die Ressource haben und einen Schweißauftrag
+ ausführen. \\
+ \hline
+ Eingaben & / \\
+ \hline
+ Ziel & Der Roboter hat einen Schweißvorgang durchgeführt. \\
+ \hline
+ Vorbedingung & Die Node sowie der Roboter der Node ist hochgefahren und betriebsbereit. \\
+ \hline
+ Nachbedingung & Der Roboter hat einen Schweißvorgang abgeschlossen. \\
+ \hline
+\end{tabular}
+\end{center}
