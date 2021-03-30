@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{5}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -10,9 +10,9 @@
 \bibitem[Gamma u.\,a.(1995)Gamma, Helm, Johnson und Vlissides]{patterns}
 \dinatlabel{Gamma u.\,a. 1995} \textsc{Gamma}, Erich~; \textsc{Helm}, Richard~;
   \textsc{Johnson}, Ralph~; \textsc{Vlissides}, John~M.:
-\newblock Design Patterns: Elements of Reusable Object-Oriented Software.
-\newblock
-\newblock (1995).
+\newblock \emph{Design Patterns: Elements of Reusable Object-Oriented
+  Software}.
+\newblock Addison-Wesley, 1995. --
 \newblock ISBN 0-201-63361-2
 
 \bibitem[Lamport(1978)]{lamport}
@@ -20,6 +20,22 @@
 \newblock Time, Clocks, and the Ordering of Events in a Distributed System.
 \newblock In: \emph{Communications of the ACM}
 \newblock (1978)
+
+\bibitem[Oracle(2020{\natexlab{a}})]{objectinputstream}
+\dinatlabel{Oracle 2020{\natexlab{a}}} \textsc{Oracle}:
+\newblock \emph{Class ObjectInputStream}.
+\newblock 2020. --
+\newblock URL
+  \url{https://docs.oracle.com/javase/7/docs/api/java/io/ObjectInputStream.html}.
+  -- Zugriffsdatum: 30.03.2021
+
+\bibitem[Oracle(2020{\natexlab{b}})]{objectoutputstream}
+\dinatlabel{Oracle 2020{\natexlab{b}}} \textsc{Oracle}:
+\newblock \emph{Class ObjectOutputStream}.
+\newblock 2020. --
+\newblock URL
+  \url{https://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutputStream.html}.
+  -- Zugriffsdatum: 30.03.2021
 
 \bibitem[Tanenbaum und van Steen(2018)]{tanenbaumvansteen}
 \dinatlabel{Tanenbaum und van Steen 2018} \textsc{Tanenbaum}, Andrew~S.~;

@@ -6,7 +6,12 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Klassendiagramm Robot\relax }}{9}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Klassendiagramm LamportMutex\relax }}{10}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Klassendiagramm Statemachine\relax }}{11}{figure.caption.15}%
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Klassendiagramm Middleware\relax }}{12}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Zustandsdiagramm FSM\relax }}{13}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Sequenzdiagramm Registrierung\relax }}{14}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Sequenzdiagramm Election\relax }}{15}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Sequenzdiagramm Schweißzyklus\relax }}{16}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Sequenzdiagramm Roboterausfall\relax }}{17}{figure.caption.21}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.11)  30 MAR 2021 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.11)  30 MAR 2021 22:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1560,7 +1560,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
 ]
 chapter 2.
-<./chapters//../diagrams/1_systemkontext.png, id=193, 552.0625pt x 210.7875pt>
+<./chapters//../diagrams/1_systemkontext.png, id=215, 552.0625pt x 210.7875pt>
 File: ./chapters//../diagrams/1_systemkontext.png Graphic file (type png)
 <use ./chapters//../diagrams/1_systemkontext.png>
 Package pdftex.def Info: ./chapters//../diagrams/1_systemkontext.png  used on i
@@ -1571,77 +1571,134 @@ nput line 12.
  <./chapters//../diagrams/1_systemkontext.png (PNG copy)>] [7
 
 ]
-<./chapters//../diagrams/2_gesamtsystem.png, id=207, 1204.5pt x 662.475pt>
+<./chapters//../diagrams/2_gesamtsystem.png, id=229, 1204.5pt x 662.475pt>
 File: ./chapters//../diagrams/2_gesamtsystem.png Graphic file (type png)
 <use ./chapters//../diagrams/2_gesamtsystem.png>
 Package pdftex.def Info: ./chapters//../diagrams/2_gesamtsystem.png  used on in
-put line 64.
+put line 67.
 (pdftex.def)             Requested size: 418.25368pt x 230.04007pt.
  [8 <./chapters//../diagrams/2_gesamtsystem.png (PNG copy)>]
-<./chapters//../diagrams/3_robot_klassendiagramm.png, id=215, 1545.775pt x 1204
+<./chapters//../diagrams/3_robot_klassendiagramm.png, id=237, 1545.775pt x 1204
 .5pt>
 File: ./chapters//../diagrams/3_robot_klassendiagramm.png Graphic file (type pn
 g)
 <use ./chapters//../diagrams/3_robot_klassendiagramm.png>
 Package pdftex.def Info: ./chapters//../diagrams/3_robot_klassendiagramm.png  u
-sed on input line 79.
+sed on input line 82.
 (pdftex.def)             Requested size: 418.25368pt x 325.89938pt.
  [9
 
  <./chapters//../diagrams/3_robot_klassendiagramm.png (PNG copy)>]
-<./chapters//../diagrams/4_lamport_klassendiagramm.png, id=221, 983.675pt x 381
-.425pt>
+<./chapters//../diagrams/4_lamport_klassendiagramm.png, id=243, 983.675pt x 531
+.9875pt>
 File: ./chapters//../diagrams/4_lamport_klassendiagramm.png Graphic file (type 
 png)
 <use ./chapters//../diagrams/4_lamport_klassendiagramm.png>
 Package pdftex.def Info: ./chapters//../diagrams/4_lamport_klassendiagramm.png 
- used on input line 94.
-(pdftex.def)             Requested size: 418.25368pt x 162.18204pt.
+ used on input line 97.
+(pdftex.def)             Requested size: 418.25368pt x 226.20128pt.
  [10
 
  <./chapters//../diagrams/4_lamport_klassendiagramm.png (PNG copy)>]
-<./chapters//../diagrams/5_fsm_klassendiagramm.png, id=229, 1134.2375pt x 913.4
+<./chapters//../diagrams/5_fsm_klassendiagramm.png, id=251, 1134.2375pt x 913.4
 125pt>
 File: ./chapters//../diagrams/5_fsm_klassendiagramm.png Graphic file (type png)
 
 <use ./chapters//../diagrams/5_fsm_klassendiagramm.png>
 Package pdftex.def Info: ./chapters//../diagrams/5_fsm_klassendiagramm.png  use
-d on input line 111.
+d on input line 114.
 (pdftex.def)             Requested size: 418.25368pt x 336.8284pt.
-) (./chapters/3_implementierung.tex [11
+ [11
 
  <./chapters//../diagrams/5_fsm_klassendiagramm.png (PNG copy)>]
+<./chapters//../diagrams/6_middleware_klassendiagramm.png, id=260, 1334.9875pt 
+x 873.2625pt>
+File: ./chapters//../diagrams/6_middleware_klassendiagramm.png Graphic file (ty
+pe png)
+<use ./chapters//../diagrams/6_middleware_klassendiagramm.png>
+Package pdftex.def Info: ./chapters//../diagrams/6_middleware_klassendiagramm.p
+ng  used on input line 131.
+(pdftex.def)             Requested size: 418.25368pt x 273.58675pt.
+ [12
+
+ <./chapters//../diagrams/6_middleware_klassendiagramm.png (PNG copy)>]
+<./chapters//../diagrams/7_fsm.png, id=273, 1616.0375pt x 662.475pt>
+File: ./chapters//../diagrams/7_fsm.png Graphic file (type png)
+<use ./chapters//../diagrams/7_fsm.png>
+Package pdftex.def Info: ./chapters//../diagrams/7_fsm.png  used on input line 
+151.
+(pdftex.def)             Requested size: 418.25368pt x 171.45097pt.
+ [13
+
+ <./chapters//../diagrams/7_fsm.png (PNG copy)>]
+<./chapters//../diagrams/8_sequence_register.png, id=280, 682.55pt x 732.7375pt
+>
+File: ./chapters//../diagrams/8_sequence_register.png Graphic file (type png)
+<use ./chapters//../diagrams/8_sequence_register.png>
+Package pdftex.def Info: ./chapters//../diagrams/8_sequence_register.png  used 
+on input line 167.
+(pdftex.def)             Requested size: 292.77629pt x 314.3107pt.
+ [14
+
+ <./chapters//../diagrams/8_sequence_register.png (PNG copy)>]
+<./chapters//../diagrams/9_sequence_election.png, id=288, 682.55pt x 531.9875pt
+>
+File: ./chapters//../diagrams/9_sequence_election.png Graphic file (type png)
+<use ./chapters//../diagrams/9_sequence_election.png>
+Package pdftex.def Info: ./chapters//../diagrams/9_sequence_election.png  used 
+on input line 188.
+(pdftex.def)             Requested size: 334.60422pt x 260.79791pt.
+ [15
+
+ <./chapters//../diagrams/9_sequence_election.png (PNG copy)>]
+<./chapters//../diagrams/10_sequence_welding.png, id=294, 682.55pt x 1003.75pt>
+
+File: ./chapters//../diagrams/10_sequence_welding.png Graphic file (type png)
+<use ./chapters//../diagrams/10_sequence_welding.png>
+Package pdftex.def Info: ./chapters//../diagrams/10_sequence_welding.png  used 
+on input line 205.
+(pdftex.def)             Requested size: 204.9466pt x 301.3877pt.
+ [16
+
+ <./chapters//../diagrams/10_sequence_welding.png (PNG copy)>]
+<./chapters//../diagrams/11_sequence_robot_fail.png, id=302, 311.1625pt x 301.1
+25pt>
+File: ./chapters//../diagrams/11_sequence_robot_fail.png Graphic file (type png
+)
+<use ./chapters//../diagrams/11_sequence_robot_fail.png>
+Package pdftex.def Info: ./chapters//../diagrams/11_sequence_robot_fail.png  us
+ed on input line 231.
+(pdftex.def)             Requested size: 311.16174pt x 301.12425pt.
+) (./chapters/3_leistungsanalyse.tex [17
+
+ <./chapters//../diagrams/11_sequence_robot_fail.png (PNG copy)>]
 chapter 3.
-) (./chapters/4_leistungsanalyse.tex [12
+) (./chapters/4_diskussion.tex [18
 
 ]
 chapter 4.
-) (./chapters/5_diskussion.tex [13
+) (./chapters/5_fazit.tex [19
 
 ]
 chapter 5.
-) (./chapters/6_fazit.tex [14
-
-]
-chapter 6.
-) (./thesis.bbl [15
+) (./thesis.bbl [20
 
 ]
 chapter without number
-) (./appendix/example_appendix.tex [16
+) (./appendix/example_appendix.tex [21
 
 ]
 chapter A.
 )
 No file thesis.gls.
-(../style/statement_ie.tex [17
+(../style/statement_ie.tex [22
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 4
 .
  (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [18
+) [23
 
 ]) (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -1654,12 +1711,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 34502 strings out of 479383
- 699875 string characters out of 5875830
+ 34570 strings out of 479383
+ 701980 string characters out of 5875830
  1226825 words of memory out of 5000000
- 50796 multiletter control sequences out of 15000+600000
+ 50843 multiletter control sequences out of 15000+600000
  433577 words of font info for 81 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  109i,19n,111p,10634b,970s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1679,10 +1739,10 @@ b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/t
 exmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts
 /type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/u
 hvr8a.pfb>
-Output written on thesis.pdf (25 pages, 681121 bytes).
+Output written on thesis.pdf (30 pages, 963617 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 358 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
- 347 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 515 PDF objects out of 1000 (max. 8388607)
+ 433 compressed objects within 5 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 417 words of extra memory for PDF output out of 10000 (max. 10000000)
 

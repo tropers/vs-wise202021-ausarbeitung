@@ -7,22 +7,27 @@
 \contentsline {subsection}{\numberline {1.1.2}UseCase}{5}{subsection.1.1.2}%
 \contentsline {chapter}{\numberline {2}Design \& Architektur}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Systemkontext}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Lösungsstrategie}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Lösungsansatz}{7}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Registrierung eines Roboters}{7}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Bestimmung eines Zyklus}{7}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Schweißvorgang (Welding)}{7}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Logging der Prozessabläufe}{8}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}Architektur}{8}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Gesamtsystem}{8}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Robot}{8}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Robot}{9}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Distributed Mutex}{10}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}FSM}{11}{subsection.2.3.4}%
-\contentsline {section}{\numberline {2.4}Laufzeitsicht}{11}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Implementierung}{12}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Leistungsanalyse}{13}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Diskussion}{14}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Fazit}{15}{chapter.6}%
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{16}{chapter*.16}%
-\contentsline {chapter}{\numberline {A}Anhang}{17}{appendix.A}%
-\contentsline {chapter}{Selbstständigkeitserklärung}{18}{appendix.A}%
+\contentsline {subsection}{\numberline {2.3.5}Middleware}{12}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Prozesse und Abläufe}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}StateMachine}{13}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Registrierung}{14}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Election}{15}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Schweißzyklus}{16}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Roboterausfall}{17}{subsection.2.4.5}%
+\contentsline {chapter}{\numberline {3}Leistungsanalyse}{18}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Diskussion}{19}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Fazit}{20}{chapter.5}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{21}{chapter*.22}%
+\contentsline {chapter}{\numberline {A}Anhang}{22}{appendix.A}%
+\contentsline {chapter}{Selbstständigkeitserklärung}{23}{appendix.A}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

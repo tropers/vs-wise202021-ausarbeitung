@@ -8,44 +8,49 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
 Database file #1: literature.bib
-You've used 3 entries,
+Warning--entry type for "objectoutputstream" isn't style-file defined
+--line 27 of file literature.bib
+Warning--entry type for "objectinputstream" isn't style-file defined
+--line 35 of file literature.bib
+You've used 5 entries,
             3552 wiz_defined-function locations,
-            812 strings with 6418 characters,
-and the built_in function-call counts, 2228 in all, are:
-= -- 265
-> -- 33
-< -- 61
-+ -- 76
-- -- 23
-* -- 200
-:= -- 381
-add.period$ -- 4
-call.type$ -- 3
-change.case$ -- 16
-chr.to.int$ -- 3
-cite$ -- 3
-duplicate$ -- 55
-empty$ -- 150
-format.name$ -- 40
-if$ -- 426
-int.to.chr$ -- 0
+            821 strings with 6665 characters,
+and the built_in function-call counts, 3175 in all, are:
+= -- 371
+> -- 47
+< -- 65
++ -- 85
+- -- 29
+* -- 299
+:= -- 541
+add.period$ -- 5
+call.type$ -- 5
+change.case$ -- 24
+chr.to.int$ -- 4
+cite$ -- 5
+duplicate$ -- 82
+empty$ -- 243
+format.name$ -- 52
+if$ -- 630
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 6
-newline$ -- 30
-num.names$ -- 12
-pop$ -- 25
+missing$ -- 7
+newline$ -- 41
+num.names$ -- 20
+pop$ -- 35
 preamble$ -- 1
-purify$ -- 16
+purify$ -- 24
 quote$ -- 0
-skip$ -- 100
+skip$ -- 120
 stack$ -- 0
-substring$ -- 185
-swap$ -- 13
-text.length$ -- 7
+substring$ -- 271
+swap$ -- 18
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
+type$ -- 45
 warning$ -- 0
-while$ -- 22
+while$ -- 34
 width$ -- 0
-write$ -- 43
+write$ -- 61
+(There were 2 warnings)

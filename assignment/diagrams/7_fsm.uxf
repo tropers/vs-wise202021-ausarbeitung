@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text/>
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>312</x>
+      <y>368</y>
+      <w>96</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>StateInitial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>960</x>
+      <y>368</y>
+      <w>96</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>StateIdle</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>296</x>
+      <y>576</y>
+      <w>128</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>StateError
+-
+entry / STATUS_NOK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>376</y>
+      <w>240</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+election /</panel_attributes>
+    <additional_attributes>10.0;20.0;280.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>624</x>
+      <y>352</y>
+      <w>144</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>StateElection
+-
+entry / send ELECTION
+to every process 
+with higher ID
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>184</x>
+      <y>384</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>376</y>
+      <w>136</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+/ STATUS_OK</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>352</x>
+      <y>408</y>
+      <w>112</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+systemFailure /</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>544</x>
+      <y>584</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>StateCoordinator
+-
+entry / choose cycle
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>376</y>
+      <w>216</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[ACK received from
+process with higher ID] /</panel_attributes>
+    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>424</y>
+      <w>128</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[no ACKs received] /</panel_attributes>
+    <additional_attributes>120.0;10.0;120.0;140.0;30.0;140.0;30.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>792</x>
+      <y>536</y>
+      <w>176</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>State
+CoordinatorWelding
+-
+entry / send WELDING to
+other participants in cycle
+
+do / wait for other participants
+to finish welding
+
+exit / choose new coordinator</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>608</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>408</y>
+      <w>64</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;260.0;60.0;260.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>368</x>
+      <y>424</y>
+      <w>304</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+systemFailure /</panel_attributes>
+    <additional_attributes>360.0;10.0;360.0;30.0;10.0;30.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>128</x>
+      <y>320</y>
+      <w>896</w>
+      <h>272</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+systemFailure /
+
+
+
+
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes>1100.0;60.0;1100.0;20.0;10.0;20.0;10.0;160.0;270.0;160.0;270.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>352</x>
+      <y>608</y>
+      <w>544</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+systemFailure /</panel_attributes>
+    <additional_attributes>660.0;90.0;660.0;150.0;10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>368</x>
+      <y>608</y>
+      <w>272</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+systemFailure /</panel_attributes>
+    <additional_attributes>320.0;60.0;320.0;120.0;10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1208</x>
+      <y>352</y>
+      <w>176</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>StateWelding
+-
+entry / STATUS_WORKING;
+try to acquire resource
+and weld
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1048</x>
+      <y>376</y>
+      <w>176</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+welding / </panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>408</y>
+      <w>304</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+coordinator /</panel_attributes>
+    <additional_attributes>360.0;10.0;360.0;70.0;70.0;70.0;70.0;240.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>416</y>
+      <w>976</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+systemFailure /</panel_attributes>
+    <additional_attributes>1200.0;10.0;1200.0;420.0;10.0;420.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1016</x>
+      <y>296</y>
+      <w>296</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[welding successful] /</panel_attributes>
+    <additional_attributes>350.0;70.0;350.0;20.0;10.0;20.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>416</y>
+      <w>1008</w>
+      <h>376</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[welding not successful] /</panel_attributes>
+    <additional_attributes>1240.0;10.0;1240.0;450.0;10.0;450.0;10.0;250.0</additional_attributes>
+  </element>
+</diagram>
