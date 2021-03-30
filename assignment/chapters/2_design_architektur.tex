@@ -113,5 +113,12 @@ akquirieren (RequestResourceService) oder freigeben (ReleaseResourceService) kö
  \label{fig:class_fsm}
 \end{figure}
 
+In Diagramm \ref{fig:class_fsm} ist das Klassendiagramm der FSM abgebildet. Für die Implementierung der FSM
+wurde das State Pattern \citep{patterns} verwendet. Dieses ermöglicht eine übersichtliche und erweiterbare
+Implementierung einer FSM, da jeder Zustand als Klasse implementiert ist und vom Interface \glqq State\grqq{}
+(siehe \ref{fig:class_fsm}) erbt. Zum Hinzufügen von Zuständen muss eine neue Klasse implementiert werden, die 
+von State erbt. Der StateMachineContext wird vom Roboter als Instanz gehalten und enthält zur Laufzeit immer
+den aktuellen Zustand der FSM.
+
 
 \section{Laufzeitsicht}
