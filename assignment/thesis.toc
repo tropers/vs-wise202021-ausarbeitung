@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Bestimmung eines Zyklus}{6}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Schweißvorgang (Welding)}{6}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Logging der Prozessabläufe}{7}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Gesamtsystem}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Architektur}{7}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Ebenen}{7}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Implementierung}{8}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Leistungsanalyse}{9}{chapter.4}%

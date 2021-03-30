@@ -43,17 +43,16 @@ Koordinator gewählt wird.
 \subsection{Schweißvorgang (Welding)}
 
 Um den Schweißvorgang selbst zu simulieren wird beim welding() call in einer Node ein Thread gestartet,
-der eine konfigurierte Zeit wartet um die mechanische Bewegung und das Schweißen selber der Roboters
-mindestens zeitlich zu simulieren. Zusätzlich wird über die Konsole sowie in der Log-Datei eine Nachricht
-ausgegeben, welche auf den Schweißvorgang hinweist.
+der eine konfigurierte Zeit wartet um die mechanische Bewegung und das Schweißen der Roboter zu simulieren. Zusätzlich wird über die Konsole sowie in der Log-Datei eine Nachricht ausgegeben,
+welche auf den Schweißvorgang hinweist.
 
 \subsection{Logging der Prozessabläufe}
 
-Um das Logging der verschiedenen Abläufe und Zustände sicherzustellen wurde ein Loggin-Server implementiert,
+Um das Logging der verschiedenen Abläufe und Zustände sicherzustellen wurde ein Logging-Server implementiert,
 welcher selbst über eine RPC Schnittstelle verfügt, auf welcher Log-Nachrichten der einzelnen Nodes übertragen
 werden können.
 
-\section{Gesamtsystem}
+\section{Architektur}
 
 
 
