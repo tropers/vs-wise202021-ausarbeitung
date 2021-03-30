@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>490</y>
+      <w>350</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>LamportMutex
+-
+- requestList: MutableList&lt;Request&gt;
+- requestListLock: ReentrantLock
+- requestListLockCondition: Condition
+-
++ addRequest(req: Request)
++ removeRequests(id: Int)
+- checkTimestamps(): Boolean
++ acquire(stubs: List&lt;Stub&gt;): void
++ release(stubs: List&lt;Stub&gt;): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>320</y>
+      <w>260</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;inteface&gt;&gt;
+IDistributedMutex
+-
++ acquire(stubs: List&lt;Stub&gt;): void
++ release(stubs: List&lt;Stub&gt;): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>390</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>490</y>
+      <w>200</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>RequestResourceService
+-
+- lamport: LamportMutex
+-
++ call(m: Message): Any</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>950</x>
+      <y>490</y>
+      <w>200</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ReleaseResourceService
+-
+- lamport: LamportMutex
+-
++ call(m: Message): Any</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>320</y>
+      <w>200</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Service
+-
++ call(m: Message): Any</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>380</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;160.0;60.0;10.0;60.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>890</x>
+      <y>380</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;160.0;60.0;160.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>550</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;50.0;200.0;50.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>550</y>
+      <w>520</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;70.0;500.0;70.0;500.0;10.0</additional_attributes>
+  </element>
+</diagram>

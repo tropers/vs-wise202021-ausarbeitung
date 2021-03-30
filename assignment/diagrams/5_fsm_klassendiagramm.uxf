@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>162</y>
+      <w>297</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>StateMachineContext
+-
+- robot: Robot
+- currentState: State
+- weldingCountDownLatch: CountDownLatch</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>333</y>
+      <w>387</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+State
+-
++ entry(context: StateMachineContext)
++ welding(context: StateMachineContext, cycle: List&lt;Int&gt;)
++ election(context: StateMachineContext)
++ coordinator(context: StateMachineContext)
++ systemFailure(context: StateMachineContext)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>225</y>
+      <w>27</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>783</x>
+      <y>333</y>
+      <w>387</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>StateCoordinator
+-
++ entry(context: StateMachineContext)
++ welding(context: StateMachineContext, cycle: List&lt;Int&gt;)
++ election(context: StateMachineContext)
++ coordinator(context: StateMachineContext)
++ systemFailure(context: StateMachineContext)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>387</y>
+      <w>171</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>189</y>
+      <w>405</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;430.0;10.0;430.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>783</x>
+      <y>495</y>
+      <w>387</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>StateCoordintatorWelding
+-
+- cycle: List&lt;Int&gt;
+-
++ entry(context: StateMachineContext)
++ welding(context: StateMachineContext, cycle: List&lt;Int&gt;)
++ election(context: StateMachineContext)
++ coordinator(context: StateMachineContext)
++ systemFailure(context: StateMachineContext)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>387</y>
+      <w>171</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0;150.0;190.0;170.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>189</y>
+      <w>621</w>
+      <h>387</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;670.0;10.0;670.0;410.0;650.0;410.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>783</x>
+      <y>657</y>
+      <w>387</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>StateElection
+-
++ entry(context: StateMachineContext)
++ welding(context: StateMachineContext, cycle: List&lt;Int&gt;)
++ election(context: StateMachineContext)
++ coordinator(context: StateMachineContext)
++ systemFailure(context: StateMachineContext)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>189</y>
+      <w>621</w>
+      <h>549</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;670.0;10.0;670.0;590.0;650.0;590.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>387</y>
+      <w>171</w>
+      <h>351</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0;150.0;370.0;170.0;370.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>783</x>
+      <y>819</y>
+      <w>387</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>StateError
+-
++ entry(context: StateMachineContext)
++ welding(context: StateMachineContext, cycle: List&lt;Int&gt;)
++ election(context: StateMachineContext)
++ coordinator(context: StateMachineContext)
++ systemFailure(context: StateMachineContext)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>387</y>
+      <w>171</w>
+      <h>513</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0;150.0;550.0;170.0;550.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>189</y>
+      <w>621</w>
+      <h>711</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;670.0;10.0;670.0;770.0;650.0;770.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>495</y>
+      <w>387</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>StateIdle
+-
++ entry(context: StateMachineContext)
++ welding(context: StateMachineContext, cycle: List&lt;Int&gt;)
++ election(context: StateMachineContext)
++ coordinator(context: StateMachineContext)
++ systemFailure(context: StateMachineContext)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>441</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>225</x>
+      <y>189</y>
+      <w>90</w>
+      <h>387</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0;10.0;410.0;30.0;410.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>657</y>
+      <w>387</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>StateInitial
+-
++ entry(context: StateMachineContext)
++ welding(context: StateMachineContext, cycle: List&lt;Int&gt;)
++ election(context: StateMachineContext)
++ coordinator(context: StateMachineContext)
++ systemFailure(context: StateMachineContext)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>225</x>
+      <y>189</y>
+      <w>90</w>
+      <h>558</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0;10.0;600.0;30.0;600.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>441</y>
+      <w>234</w>
+      <h>297</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;240.0;40.0;240.0;310.0;220.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>225</x>
+      <y>189</y>
+      <w>90</w>
+      <h>711</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0;10.0;770.0;30.0;770.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>441</y>
+      <w>234</w>
+      <h>459</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;240.0;40.0;240.0;490.0;220.0;490.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>819</y>
+      <w>387</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>StateWelding
+-
+- cycle: List&lt;Int&gt;
+-
++ entry(context: StateMachineContext)
++ welding(context: StateMachineContext, cycle: List&lt;Int&gt;)
++ election(context: StateMachineContext)
++ coordinator(context: StateMachineContext)
++ systemFailure(context: StateMachineContext)</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

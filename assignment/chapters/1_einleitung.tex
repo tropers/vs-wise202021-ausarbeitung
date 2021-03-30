@@ -2,8 +2,9 @@
 % @author Tristan Ropers
 %
 \chapter{Einleitung}
+
 In dieser Ausarbeitung geht es um die Umsetzung eines Algorithmus zum gegenseitigen Ausschlusses in einem
-verteilten System von Schweißrobotern, die auf. Das Problem des wechselseitigen Ausschlusses 
+verteilten System von Schweißrobotern. Das Problem des wechselseitigen Ausschlusses 
 ist ein weit verbreitetes Problem der Informatik. In diesem konkreten Fall sollen mehrere Schweißroboter
 auf eine Ressource zugreifen können und dort einen Schweißpunkt setzen, was eine Regelung der Reihenfolge
 erfordert, da die Roboter nicht alle gleichzeitig auf die gegebene Ressource zugreifen können. Um diese Reihenfolge
@@ -13,6 +14,7 @@ und für diesen Anwendungsfall evaluiert.
 \section{Anforderungsanalyse}
 
 \subsection{Requirements}
+
 In der Aufgabenstellung sind Anforderungen an die RPC-Architektur formuliert.
 Zunächst werden diese analysiert und hier zusammengefasst.
 Die Anforderungen umfassen die Transparenzziele, Skalierung \cite{tanenbaumvansteen}) sowie Anforderungen
@@ -29,11 +31,13 @@ kommunizieren, welches auf eine Netzwerkkarte beschränkt ist. Die Replication-T
 uninteressant, da jede Node im System eindeutig identifizierbar ist,was Replikationen der Nodes für die Funktionsweise 
 der verwendeten Algorithmen ausschließt.\\\\
 Desweiteren ist ein Minimalset an Funktionen an die RPC-Architektur gefordert:
+
 \begin{itemize}
-  \item void register(int id)
-  \item void welding()
-  \item void setStatus(int status)
+ \item void register(int id)
+ \item void welding()
+ \item void setStatus(int status)
 \end{itemize}
+
 Es soll kein zentrales System, bis auf Erfassung von Daten zu Experimentabläufen, am Gesamtsystem beteiligt
 sein.
 Alle beteiligten Nodes (Roboter) sollen sich auf einen Zyklus einigen, in dem immer drei Roboter nacheinander
@@ -135,6 +139,21 @@ Daraus ergeben sich folgende Anforderungen:
 \end{tabular}
 \caption{Requirement Logging}
 \label{table:reqlogging}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |p{2.5cm}|p{11cm}| } 
+ \hline
+ Requirement & Austauschbarkeit des Algorithmus \\
+ \hline
+ Beschreibung & Der Algorithmus für den gegenseitigen verteilten Ausschluss soll austauschbar als Bibliothek
+ in die Architektur eingebunden werden.\\
+ \hline
+\end{tabular}
+\caption{Requirement Austauschbarkeit des Algorithmus}
+\label{table:reqmutexexchangable}
 \end{center}
 \end{table}
 

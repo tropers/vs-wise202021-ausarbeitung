@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>738</x>
+      <y>396</y>
+      <w>387</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>Robot
+--
+- id: Int
+- weldingCount: Int
+- participants: MutableMap&lt;Int, Robot&gt;
+- robotCallers: MutableMap&lt;Int, RobotCaller&gt;
+- currentCoordinator: Robot
+- stateMachine: StateMachineContext
+- robotStatus: Int
+- logger: LoggerCaller
+- participantsLock: ReentrantLock
+- distributedMutex: IDistributedMutex
+--
++ getStubs(participants: List&lt;Int&gt;): List&lt;Stub&gt;
++ getSortedRobotList(): List&lt;Robot&gt;
++ register(id: Int, ownPort: Int, portRange: IntRange): void
++ welding(stubs: List&lt;Stub&gt;): Boolean
++ setStatus(status: Int): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>153</x>
+      <y>432</y>
+      <w>387</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>RobotCaller
+--
+- uri: String
+- port: Int
+- robot: Robot
+--
++ coordiantor(id: Int): Message
++ election(): Message
++ weldingCount(): Message
++ weldingReady(): Message
++ welding(participants: List&lt;Int&gt;): Message
++ weldingSuccessful(): Message
++ robotFailure(): Message
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>243</x>
+      <y>261</y>
+      <w>207</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Stub
+--
+- uri: String
+- port: Int
+--
++ call(m: Message): Message</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>729</y>
+      <w>180</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Message
+--
+- type: MessageType
+- contents: Any</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>333</x>
+      <y>603</y>
+      <w>27</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>207</x>
+      <y>864</y>
+      <w>270</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>MessageType
+--
+REGISTER_REQUEST
+REGISTER_RESPONSE
+ELECTION
+ELECTION_RESPONSE
+COORDINATOR
+COORDINATOR_RESPONSE
+GET_WELDING_COUNT
+GET_REGISTER_RESPONSEWELDING_COUNT_RESPONSE
+WELDING
+WELDING_READY
+WELDING_READY_ACK
+WELDING_NOT_READY_ACK
+WELDING_DONE
+REQUEST_RESOURCE
+REQUEST_RESPONSE_ACK
+RELEASE_RESOURCE
+ROBOT_FAILURE
+LOG
+ACK
+ERR
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>333</x>
+      <y>792</y>
+      <w>27</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>990</y>
+      <w>108</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Serializable</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>63</x>
+      <y>756</y>
+      <w>207</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;260.0;10.0;10.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>117</x>
+      <y>999</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>333</x>
+      <y>333</y>
+      <w>27</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>288</y>
+      <w>504</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;540.0;10.0;540.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>783</x>
+      <y>765</y>
+      <w>297</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>StateMachineContext
+-
+- robot: Robot
+- currentState: State
+- weldingCountDownLatch: CountDownLatch</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>738</x>
+      <y>945</y>
+      <w>387</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+State
+-
++ entry(context: StateMachineContext)
++ welding(context: StateMachineContext, cycle: List&lt;Int&gt;)
++ election(context: StateMachineContext)
++ coordinator(context: StateMachineContext)
++ systemFailure(context: StateMachineContext)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>927</x>
+      <y>828</y>
+      <w>27</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1134</x>
+      <y>765</y>
+      <w>234</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;inteface&gt;&gt;
+IDistributedMutex
+-
++ acquire(stubs: List&lt;Stub&gt;): void
++ release(stubs: List&lt;Stub&gt;): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1116</x>
+      <y>531</y>
+      <w>117</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0;100.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>711</x>
+      <y>135</y>
+      <w>234</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>LoggerCaller
+--
+- uri: String
+- port: Int
+- robot: Robot
+--
++ log(logText: String): Message
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>819</x>
+      <y>225</y>
+      <w>36</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes>
+    <additional_attributes>10.0;190.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>333</x>
+      <y>171</y>
+      <w>396</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0;420.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>927</x>
+      <y>333</y>
+      <w>252</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=0..*</panel_attributes>
+    <additional_attributes>220.0;210.0;260.0;210.0;260.0;10.0;10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>531</x>
+      <y>513</y>
+      <w>225</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=0..*</panel_attributes>
+    <additional_attributes>230.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>927</x>
+      <y>639</y>
+      <w>36</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+</diagram>

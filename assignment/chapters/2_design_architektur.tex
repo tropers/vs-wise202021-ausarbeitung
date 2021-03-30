@@ -8,11 +8,15 @@ abzubilden. Im folgenden Kapitel wird diese Architektur vorgestellt sowie ihre B
 
 \section{Systemkontext}
 
-\includenamedimage[0.9]{../diagrams/1_systemkontext.png} {Systemkontext}
+\begin{figure}[h]
+ \includegraphics[width=\textwidth]{../diagrams/1_systemkontext.png}
+ \caption{Systemkontext}
+ \label{fig:systemkontext}
+\end{figure}
 
-Der Systemkontext des Gesamtsystems umfasst den Nutzer, welcher gleichzeitig Administrator ist und das
-Gesamtsystem. Der Nutzer konfiguriert das System und startet im Anschluss die zuvor
-konfigurierte Konfiguration.
+Der Systemkontext des Gesamtsystems, wie in \ref{fig:systemkontext} zu sehen,
+umfasst den Nutzer, welcher gleichzeitig Administrator ist und das Gesamtsystem.
+Der Nutzer konfiguriert das System und startet im Anschluss die zuvor konfigurierte Konfiguration.
 \clearpage
 
 \section{Lösungsstrategie}
@@ -56,10 +60,58 @@ werden können.
 
 \subsection{Gesamtsystem}
 
-\includenamedimage[0.9]{../diagrams/2_gesamtsystem.png} {Komponentendiagramm Gesamtsystem}
+\begin{figure}[h]
+ \includegraphics[width=\textwidth]{../diagrams/2_gesamtsystem.png}
+ \caption{Komponentendiagramm Gesamtsystem}
+ \label{fig:gesamtsystem}
+\end{figure}
+
+\subsubsection{Robot}
 
 Eine zentrale Rolle in der Architektur spielt der Roboter, er beinhaltet Kommunikationselemente (Stubs 
-\citep{tanenbaumvansteen} zu den anderen Robotern), eine Statemachine sowie eine Simulation des
-Schweißvorgangs.
+\citep{tanenbaumvansteen} zu den anderen Robotern), eine Statemachine, eine Simulation des
+Schweißvorgangs (siehe \ref{fig:gesamtsystem}) und eine Implementierung des verteilten gegenseitigen
+Ausschluss (IDistributedMutex \ref{fig:gesamtsystem}).
 
-\section{Ebenen}
+\clearpage
+
+\begin{figure}[h]
+ \includegraphics[width=\textwidth]{../diagrams/3_robot_klassendiagramm.png}
+ \caption{Klassendiagramm Robot}
+ \label{fig:class_robot}
+\end{figure}
+
+Im Klassendiagramm \ref{fig:class_robot} zu sehen ist die Implementierung der Robot-Klasse.
+Wie vorher erwähnt sieht man hier die Bündelung der Funktionalitäten wie eine 
+Instanz der FSM (StateMachineContext), den Robot- und LoggerCaller und den IDistributedMutex für
+den verteilten gegenseitigen Ausschluss.
+
+\clearpage
+
+\subsubsection{Distributed Mutex}
+
+\begin{figure}[h]
+ \includegraphics[width=\textwidth]{../diagrams/4_lamport_klassendiagramm.png}
+ \caption{Klassendiagramm LamportMutex}
+ \label{fig:class_lamport}
+\end{figure}
+
+In \ref{fig:class_lamport} zu sehen ist das Klassendiagramm des LamportMutex, der den Lamport-Algorithmus
+implementiert. Damit die Austauschbarkeit des verwendeten Algorithmus (siehe \ref{table:reqmutexexchangable})
+sichergestellt ist, wird das IDistributedMutex als Interface definiert und wie in \ref{fig:class_robot}
+zu sehen im Robot mit der Implementierung des LamportMutex instanziiert. Die beiden Services RequestResourceService
+und ReleaseResourceService sind Bestandteile der RPC-Architektur, über diese andere Roboter die Ressource
+akquirieren (RequestResourceService) oder freigeben (ReleaseResourceService) können.
+
+\clearpage
+
+\subsubsection{FSM}
+
+\begin{figure}[h]
+ \includegraphics[width=\textwidth]{../diagrams/5_fsm_klassendiagramm.png}
+ \caption{Klassendiagramm Statemachine}
+ \label{fig:class_fsm}
+\end{figure}
+
+
+\section{Laufzeitsicht}
