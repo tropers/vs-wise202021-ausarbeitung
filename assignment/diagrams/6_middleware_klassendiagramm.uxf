@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>250</y>
+      <w>230</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Stub
+-
+- uri: String
+- port: Int
+-
++ call(m: Message): Message</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>250</y>
+      <w>440</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Skeleton
+-
+- running: Boolean
+- requestQueue: BlockingQueue&lt;Socket&gt;
+- services: MutableMap&lt;MessageType, Service&gt;
+-
+- handleRequests()
++ registerService(msgType: MessageType, serv: Service)
++ run()</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
