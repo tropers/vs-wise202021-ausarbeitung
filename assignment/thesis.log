@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.11)  30 MAR 2021 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.11)  30 MAR 2021 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1479,11 +1479,11 @@ dftex/updmap/pdftex.map}
  <../style/HAW_Marke_schwarz.pdf>])
 (../style/abstractpage.tex [2]) [3
 
-] (./thesis.toc)
-\tf@toc=\write9
- [4
+] (./thesis.toc [4
 
-] [5] (./thesis.lof)
+])
+\tf@toc=\write9
+ [5] (./thesis.lof)
 \tf@lof=\write10
 
 [6
@@ -1498,13 +1498,13 @@ No file thesis.sls.
 ] (./chapters/1_einleitung.tex
 chapter 1.
 
-Overfull \hbox (28.41653pt too wide) in paragraph at lines 16--32
+Overfull \hbox (28.41653pt too wide) in paragraph at lines 18--34
 \T1/cmr/m/n/10.95 Transparency, Replication-Transparency, Concurrency-Transpare
 ncy und Failure-Transparency
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--32
+Underfull \hbox (badness 10000) in paragraph at lines 18--34
 
  []
 
@@ -1512,20 +1512,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--32
 
 
 ]
-Overfull \hbox (2.05408pt too wide) in paragraph at lines 62--62
+Overfull \hbox (2.05408pt too wide) in paragraph at lines 66--66
 []|\T1/cmr/m/n/10.95 Nachbedingung| 
  []
 
 
-Overfull \hbox (2.05408pt too wide) in paragraph at lines 86--86
-[]|\T1/cmr/m/n/10.95 Nachbedingung| 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (2.05408pt too wide) in paragraph at lines 111--111
+Overfull \hbox (2.05408pt too wide) in paragraph at lines 90--90
 []|\T1/cmr/m/n/10.95 Nachbedingung| 
  []
 
@@ -1533,7 +1525,15 @@ Overfull \hbox (2.05408pt too wide) in paragraph at lines 111--111
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (2.05408pt too wide) in paragraph at lines 133--133
+Overfull \hbox (2.05408pt too wide) in paragraph at lines 115--115
+[]|\T1/cmr/m/n/10.95 Nachbedingung| 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.05408pt too wide) in paragraph at lines 137--137
 []|\T1/cmr/m/n/10.95 Nachbedingung| 
  []
 
@@ -1547,12 +1547,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
@@ -1560,7 +1560,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
 ]
 chapter 2.
-<./chapters//../diagrams/1_systemkontext.png, id=187, 552.0625pt x 210.7875pt>
+<./chapters//../diagrams/1_systemkontext.png, id=193, 552.0625pt x 210.7875pt>
 File: ./chapters//../diagrams/1_systemkontext.png Graphic file (type png)
 <use ./chapters//../diagrams/1_systemkontext.png>
 Package pdftex.def Info: ./chapters//../diagrams/1_systemkontext.png  used on i
@@ -1571,14 +1571,14 @@ nput line 12.
  <./chapters//../diagrams/1_systemkontext.png (PNG copy)>] [7
 
 ]
-<./chapters//../diagrams/2_gesamtsystem.png, id=201, 1204.5pt x 662.475pt>
+<./chapters//../diagrams/2_gesamtsystem.png, id=207, 1204.5pt x 662.475pt>
 File: ./chapters//../diagrams/2_gesamtsystem.png Graphic file (type png)
 <use ./chapters//../diagrams/2_gesamtsystem.png>
 Package pdftex.def Info: ./chapters//../diagrams/2_gesamtsystem.png  used on in
 put line 64.
 (pdftex.def)             Requested size: 418.25368pt x 230.04007pt.
  [8 <./chapters//../diagrams/2_gesamtsystem.png (PNG copy)>]
-<./chapters//../diagrams/3_robot_klassendiagramm.png, id=211, 1545.775pt x 1204
+<./chapters//../diagrams/3_robot_klassendiagramm.png, id=215, 1545.775pt x 1204
 .5pt>
 File: ./chapters//../diagrams/3_robot_klassendiagramm.png Graphic file (type pn
 g)
@@ -1589,7 +1589,7 @@ sed on input line 79.
  [9
 
  <./chapters//../diagrams/3_robot_klassendiagramm.png (PNG copy)>]
-<./chapters//../diagrams/4_lamport_klassendiagramm.png, id=217, 983.675pt x 381
+<./chapters//../diagrams/4_lamport_klassendiagramm.png, id=221, 983.675pt x 381
 .425pt>
 File: ./chapters//../diagrams/4_lamport_klassendiagramm.png Graphic file (type 
 png)
@@ -1597,22 +1597,20 @@ png)
 Package pdftex.def Info: ./chapters//../diagrams/4_lamport_klassendiagramm.png 
  used on input line 94.
 (pdftex.def)             Requested size: 418.25368pt x 162.18204pt.
-<./chapters//../diagrams/5_fsm_klassendiagramm.png, id=221, 1134.2375pt x 913.4
+ [10
+
+ <./chapters//../diagrams/4_lamport_klassendiagramm.png (PNG copy)>]
+<./chapters//../diagrams/5_fsm_klassendiagramm.png, id=229, 1134.2375pt x 913.4
 125pt>
 File: ./chapters//../diagrams/5_fsm_klassendiagramm.png Graphic file (type png)
 
 <use ./chapters//../diagrams/5_fsm_klassendiagramm.png>
 Package pdftex.def Info: ./chapters//../diagrams/5_fsm_klassendiagramm.png  use
-d on input line 109.
+d on input line 111.
 (pdftex.def)             Requested size: 418.25368pt x 336.8284pt.
+) (./chapters/3_implementierung.tex [11
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./chapters/3_implementierung.tex [10
-
- <./chapters//../diagrams/4_lamport_klassendiagramm.png (PNG copy)>] [11 <./cha
-pters//../diagrams/5_fsm_klassendiagramm.png (PNG copy)>]
+ <./chapters//../diagrams/5_fsm_klassendiagramm.png (PNG copy)>]
 chapter 3.
 ) (./chapters/4_leistungsanalyse.tex [12
 
@@ -1658,13 +1656,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 34507 strings out of 479383
- 700257 string characters out of 5875830
+ 34497 strings out of 479383
+ 699807 string characters out of 5875830
  1226825 words of memory out of 5000000
- 50799 multiletter control sequences out of 15000+600000
+ 50792 multiletter control sequences out of 15000+600000
  433577 words of font info for 81 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 109i,19n,111p,10634b,829s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 109i,19n,111p,10634b,970s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
 exmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm
 -super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx
@@ -1681,10 +1679,10 @@ b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/t
 exmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts
 /type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/u
 hvr8a.pfb>
-Output written on thesis.pdf (25 pages, 677526 bytes).
+Output written on thesis.pdf (25 pages, 678150 bytes).
 PDF statistics:
- 415 PDF objects out of 1000 (max. 8388607)
- 345 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 323 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 347 words of extra memory for PDF output out of 10000 (max. 10000000)
 
