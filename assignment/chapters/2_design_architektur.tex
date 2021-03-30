@@ -49,12 +49,14 @@ welche auf den Schweißvorgang hinweist.
 \subsection{Logging der Prozessabläufe}
 
 Um das Logging der verschiedenen Abläufe und Zustände sicherzustellen wurde ein Logging-Server implementiert,
-welcher selbst über eine RPC Schnittstelle verfügt, auf welcher Log-Nachrichten der einzelnen Nodes übertragen
+der selbst über eine RPC Schnittstelle verfügt, auf dieser Log-Nachrichten der einzelnen Nodes übertragen
 werden können.
 
 \section{Architektur}
 
+\subsection{Gesamtsystem}
 
+\includenamedimage[0.9]{../diagrams/2_gesamtsystem.png} {Komponentendiagramm Gesamtsystem}
 
 Eine zentrale Rolle in der Architektur spielt der Roboter, er beinhaltet Kommunikationselemente (Stubs 
 \citep{tanenbaumvansteen} zu den anderen Robotern), eine Statemachine sowie eine Simulation des
