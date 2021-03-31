@@ -9,6 +9,7 @@
   listof=totoc        % Abbildungs- und Tabellenverzeichnis im Inhaltsverzeichnis
 ]{scrreprt}
 \usepackage{../style/thesisstyle}
+\usepackage{subcaption}
 
 \makeglossaries           % create all glossary entries (remember: run makeglossaries manually)
 \loadglsentries{thesisglossaries.tex}  % load acronym, symbol and glossarie entries
@@ -61,9 +62,8 @@
 \pagenumbering{arabic}
 \input{chapters/1_einleitung}
 \input{chapters/2_design_architektur}
-\input{chapters/3_leistungsanalyse}
-\input{chapters/4_diskussion}
-\input{chapters/5_fazit}
+\input{chapters/3_evaluation}
+\input{chapters/4_fazit}
 
 %\bibliographystyle{plain}
 \bibliographystyle{dinat}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.11)  30 MAR 2021 22:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.11)  31 MAR 2021 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1173,145 +1173,145 @@ File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 (../style/configurationcommands.sty) (../style/convenience.sty))
 \glswrite=\write4
 \glo@main@file=\write5
-Package glossaries Info: Writing glossary file thesis.glo on input line 13.
+Package glossaries Info: Writing glossary file thesis.glo on input line 14.
 \glo@acronym@file=\write6
-Package glossaries Info: Writing glossary file thesis.acn on input line 13.
+Package glossaries Info: Writing glossary file thesis.acn on input line 14.
 \glo@symbols@file=\write7
-Package glossaries Info: Writing glossary file thesis.slo on input line 13.
+Package glossaries Info: Writing glossary file thesis.slo on input line 14.
 
 (./thesisglossaries.tex) (./thesis.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 19
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 20
 .
 
 (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10.95> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 19.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/m/scsl' undefined
-(Font)              using `T1/pcr/m/sc' instead on input line 19.
+(Font)              using `T1/pcr/m/sc' instead on input line 20.
 
 LaTeX Font Info:    Font shape `T1/pcr/b/it' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/sl' tried instead on input line 19.
+(Font)              Font shape `T1/pcr/b/sl' tried instead on input line 20.
 
 LaTeX Font Warning: Font shape `T1/pcr/b/scsl' undefined
-(Font)              using `T1/pcr/b/sc' instead on input line 19.
+(Font)              using `T1/pcr/b/sc' instead on input line 20.
 
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 19.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/pcr/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/it' tried instead on input line 19.
+(Font)              Font shape `T1/pcr/b/it' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/pcr/b/it' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/sl' tried instead on input line 19.
+(Font)              Font shape `T1/pcr/b/sl' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/pcr/bx/sl' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/sl' tried instead on input line 19.
+(Font)              Font shape `T1/pcr/b/sl' tried instead on input line 20.
 
 LaTeX Font Warning: Font shape `T1/pcr/bx/scsl' undefined
-(Font)              using `T1/pcr/bx/sc' instead on input line 19.
+(Font)              using `T1/pcr/bx/sc' instead on input line 20.
 
 LaTeX Font Info:    Font shape `T1/pcr/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/sc' tried instead on input line 19.
+(Font)              Font shape `T1/pcr/b/sc' tried instead on input line 20.
 
 LaTeX Font Warning: Font shape `T1/pcr/sbx/sc' undefined
-(Font)              using `T1/pcr/sb/sc' instead on input line 19.
+(Font)              using `T1/pcr/sb/sc' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/sb/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 19.
+(Font)              using `T1/pcr/m/n' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/sb/it' undefined
-(Font)              using `T1/pcr/sb/n' instead on input line 19.
+(Font)              using `T1/pcr/sb/n' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/sb/sl' undefined
-(Font)              using `T1/pcr/sb/it' instead on input line 19.
+(Font)              using `T1/pcr/sb/it' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/sb/scit' undefined
-(Font)              using `T1/pcr/sb/sc' instead on input line 19.
+(Font)              using `T1/pcr/sb/sc' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/sb/sc' undefined
-(Font)              using `T1/pcr/sb/n' instead on input line 19.
+(Font)              using `T1/pcr/sb/n' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/sbc/sc' undefined
-(Font)              using `T1/pcr/c/sc' instead on input line 19.
+(Font)              using `T1/pcr/c/sc' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/c/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 19.
+(Font)              using `T1/pcr/m/n' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/c/it' undefined
-(Font)              using `T1/pcr/c/n' instead on input line 19.
+(Font)              using `T1/pcr/c/n' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/c/sl' undefined
-(Font)              using `T1/pcr/c/it' instead on input line 19.
+(Font)              using `T1/pcr/c/it' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/c/scit' undefined
-(Font)              using `T1/pcr/c/sc' instead on input line 19.
+(Font)              using `T1/pcr/c/sc' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/c/sc' undefined
-(Font)              using `T1/pcr/c/n' instead on input line 19.
+(Font)              using `T1/pcr/c/n' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/lc/sc' undefined
-(Font)              using `T1/pcr/l/sc' instead on input line 19.
+(Font)              using `T1/pcr/l/sc' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/l/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 19.
+(Font)              using `T1/pcr/m/n' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/l/it' undefined
-(Font)              using `T1/pcr/l/n' instead on input line 19.
+(Font)              using `T1/pcr/l/n' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/l/sl' undefined
-(Font)              using `T1/pcr/l/it' instead on input line 19.
+(Font)              using `T1/pcr/l/it' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/l/scit' undefined
-(Font)              using `T1/pcr/l/sc' instead on input line 19.
+(Font)              using `T1/pcr/l/sc' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/l/sc' undefined
-(Font)              using `T1/pcr/l/n' instead on input line 19.
+(Font)              using `T1/pcr/l/n' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/m/ui' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 19.
+(Font)              using `T1/pcr/m/n' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/bx/ui' undefined
-(Font)              using `T1/pcr/bx/n' instead on input line 19.
+(Font)              using `T1/pcr/bx/n' instead on input line 20.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/m/In' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 19.
+(Font)              using `T1/pcr/m/n' instead on input line 20.
 
 (/usr/share/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
@@ -1385,7 +1385,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 19.
+Package hyperref Info: Link coloring ON on input line 20.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1397,9 +1397,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count364
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write8
@@ -1410,7 +1410,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 19.
+(scrreprt)           before \begin{document} on input line 20.
 
 (/usr/share/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1427,13 +1427,13 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1498,13 +1498,13 @@ No file thesis.sls.
 ] (./chapters/1_einleitung.tex
 chapter 1.
 
-Overfull \hbox (28.41653pt too wide) in paragraph at lines 18--34
+Overfull \hbox (28.41653pt too wide) in paragraph at lines 19--35
 \T1/cmr/m/n/10.95 Transparency, Replication-Transparency, Concurrency-Transpare
 ncy und Failure-Transparency
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--34
+Underfull \hbox (badness 10000) in paragraph at lines 19--35
 
  []
 
@@ -1512,20 +1512,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--34
 
 
 ]
-Overfull \hbox (2.05408pt too wide) in paragraph at lines 66--66
+Overfull \hbox (2.05408pt too wide) in paragraph at lines 67--67
 []|\T1/cmr/m/n/10.95 Nachbedingung| 
  []
 
 
-Overfull \hbox (2.05408pt too wide) in paragraph at lines 90--90
-[]|\T1/cmr/m/n/10.95 Nachbedingung| 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (2.05408pt too wide) in paragraph at lines 115--115
+Overfull \hbox (2.05408pt too wide) in paragraph at lines 91--91
 []|\T1/cmr/m/n/10.95 Nachbedingung| 
  []
 
@@ -1533,7 +1525,15 @@ Overfull \hbox (2.05408pt too wide) in paragraph at lines 115--115
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (2.05408pt too wide) in paragraph at lines 137--137
+Overfull \hbox (2.05408pt too wide) in paragraph at lines 116--116
+[]|\T1/cmr/m/n/10.95 Nachbedingung| 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.05408pt too wide) in paragraph at lines 138--138
 []|\T1/cmr/m/n/10.95 Nachbedingung| 
  []
 
@@ -1547,12 +1547,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
@@ -1560,7 +1560,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
 ]
 chapter 2.
-<./chapters//../diagrams/1_systemkontext.png, id=215, 552.0625pt x 210.7875pt>
+<./chapters//../diagrams/1_systemkontext.png, id=227, 552.0625pt x 210.7875pt>
 File: ./chapters//../diagrams/1_systemkontext.png Graphic file (type png)
 <use ./chapters//../diagrams/1_systemkontext.png>
 Package pdftex.def Info: ./chapters//../diagrams/1_systemkontext.png  used on i
@@ -1571,134 +1571,202 @@ nput line 12.
  <./chapters//../diagrams/1_systemkontext.png (PNG copy)>] [7
 
 ]
-<./chapters//../diagrams/2_gesamtsystem.png, id=229, 1204.5pt x 662.475pt>
+<./chapters//../diagrams/2_gesamtsystem.png, id=245, 1204.5pt x 662.475pt>
 File: ./chapters//../diagrams/2_gesamtsystem.png Graphic file (type png)
 <use ./chapters//../diagrams/2_gesamtsystem.png>
 Package pdftex.def Info: ./chapters//../diagrams/2_gesamtsystem.png  used on in
-put line 67.
+put line 68.
 (pdftex.def)             Requested size: 418.25368pt x 230.04007pt.
  [8 <./chapters//../diagrams/2_gesamtsystem.png (PNG copy)>]
-<./chapters//../diagrams/3_robot_klassendiagramm.png, id=237, 1545.775pt x 1204
+<./chapters//../diagrams/3_robot_klassendiagramm.png, id=253, 1545.775pt x 1204
 .5pt>
 File: ./chapters//../diagrams/3_robot_klassendiagramm.png Graphic file (type pn
 g)
 <use ./chapters//../diagrams/3_robot_klassendiagramm.png>
 Package pdftex.def Info: ./chapters//../diagrams/3_robot_klassendiagramm.png  u
-sed on input line 82.
+sed on input line 83.
 (pdftex.def)             Requested size: 418.25368pt x 325.89938pt.
  [9
 
  <./chapters//../diagrams/3_robot_klassendiagramm.png (PNG copy)>]
-<./chapters//../diagrams/4_lamport_klassendiagramm.png, id=243, 983.675pt x 531
+<./chapters//../diagrams/4_lamport_klassendiagramm.png, id=259, 983.675pt x 531
 .9875pt>
 File: ./chapters//../diagrams/4_lamport_klassendiagramm.png Graphic file (type 
 png)
 <use ./chapters//../diagrams/4_lamport_klassendiagramm.png>
 Package pdftex.def Info: ./chapters//../diagrams/4_lamport_klassendiagramm.png 
- used on input line 97.
+ used on input line 98.
 (pdftex.def)             Requested size: 418.25368pt x 226.20128pt.
  [10
 
  <./chapters//../diagrams/4_lamport_klassendiagramm.png (PNG copy)>]
-<./chapters//../diagrams/5_fsm_klassendiagramm.png, id=251, 1134.2375pt x 913.4
+<./chapters//../diagrams/5_fsm_klassendiagramm.png, id=267, 1134.2375pt x 913.4
 125pt>
 File: ./chapters//../diagrams/5_fsm_klassendiagramm.png Graphic file (type png)
 
 <use ./chapters//../diagrams/5_fsm_klassendiagramm.png>
 Package pdftex.def Info: ./chapters//../diagrams/5_fsm_klassendiagramm.png  use
-d on input line 114.
+d on input line 115.
 (pdftex.def)             Requested size: 418.25368pt x 336.8284pt.
  [11
 
  <./chapters//../diagrams/5_fsm_klassendiagramm.png (PNG copy)>]
-<./chapters//../diagrams/6_middleware_klassendiagramm.png, id=260, 1334.9875pt 
+<./chapters//../diagrams/6_middleware_klassendiagramm.png, id=276, 1334.9875pt 
 x 873.2625pt>
 File: ./chapters//../diagrams/6_middleware_klassendiagramm.png Graphic file (ty
 pe png)
 <use ./chapters//../diagrams/6_middleware_klassendiagramm.png>
 Package pdftex.def Info: ./chapters//../diagrams/6_middleware_klassendiagramm.p
-ng  used on input line 131.
+ng  used on input line 132.
 (pdftex.def)             Requested size: 418.25368pt x 273.58675pt.
  [12
 
  <./chapters//../diagrams/6_middleware_klassendiagramm.png (PNG copy)>]
-<./chapters//../diagrams/7_fsm.png, id=273, 1616.0375pt x 662.475pt>
+<./chapters//../diagrams/7_fsm.png, id=289, 1616.0375pt x 662.475pt>
 File: ./chapters//../diagrams/7_fsm.png Graphic file (type png)
 <use ./chapters//../diagrams/7_fsm.png>
 Package pdftex.def Info: ./chapters//../diagrams/7_fsm.png  used on input line 
-151.
+152.
 (pdftex.def)             Requested size: 418.25368pt x 171.45097pt.
  [13
 
  <./chapters//../diagrams/7_fsm.png (PNG copy)>]
-<./chapters//../diagrams/8_sequence_register.png, id=280, 682.55pt x 732.7375pt
+<./chapters//../diagrams/8_sequence_register.png, id=297, 682.55pt x 732.7375pt
 >
 File: ./chapters//../diagrams/8_sequence_register.png Graphic file (type png)
 <use ./chapters//../diagrams/8_sequence_register.png>
 Package pdftex.def Info: ./chapters//../diagrams/8_sequence_register.png  used 
-on input line 167.
+on input line 168.
 (pdftex.def)             Requested size: 292.77629pt x 314.3107pt.
  [14
 
  <./chapters//../diagrams/8_sequence_register.png (PNG copy)>]
-<./chapters//../diagrams/9_sequence_election.png, id=288, 682.55pt x 531.9875pt
+<./chapters//../diagrams/9_sequence_election.png, id=304, 682.55pt x 531.9875pt
 >
 File: ./chapters//../diagrams/9_sequence_election.png Graphic file (type png)
 <use ./chapters//../diagrams/9_sequence_election.png>
 Package pdftex.def Info: ./chapters//../diagrams/9_sequence_election.png  used 
-on input line 188.
+on input line 189.
 (pdftex.def)             Requested size: 334.60422pt x 260.79791pt.
  [15
 
  <./chapters//../diagrams/9_sequence_election.png (PNG copy)>]
-<./chapters//../diagrams/10_sequence_welding.png, id=294, 682.55pt x 1003.75pt>
+<./chapters//../diagrams/10_sequence_welding.png, id=310, 682.55pt x 1003.75pt>
 
 File: ./chapters//../diagrams/10_sequence_welding.png Graphic file (type png)
 <use ./chapters//../diagrams/10_sequence_welding.png>
 Package pdftex.def Info: ./chapters//../diagrams/10_sequence_welding.png  used 
-on input line 205.
+on input line 206.
 (pdftex.def)             Requested size: 204.9466pt x 301.3877pt.
  [16
 
  <./chapters//../diagrams/10_sequence_welding.png (PNG copy)>]
-<./chapters//../diagrams/11_sequence_robot_fail.png, id=302, 311.1625pt x 301.1
+<./chapters//../diagrams/11_sequence_robot_fail.png, id=318, 311.1625pt x 301.1
 25pt>
 File: ./chapters//../diagrams/11_sequence_robot_fail.png Graphic file (type png
 )
 <use ./chapters//../diagrams/11_sequence_robot_fail.png>
 Package pdftex.def Info: ./chapters//../diagrams/11_sequence_robot_fail.png  us
-ed on input line 231.
+ed on input line 232.
 (pdftex.def)             Requested size: 311.16174pt x 301.12425pt.
-) (./chapters/3_leistungsanalyse.tex [17
+) (./chapters/3_evaluation.tex [17
 
  <./chapters//../diagrams/11_sequence_robot_fail.png (PNG copy)>]
 chapter 3.
-) (./chapters/4_diskussion.tex [18
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
+
+ []
+
+[18
 
 ]
+<./chapters//../evaluation_results/3_800.png, id=329, 607.26875pt x 341.275pt>
+File: ./chapters//../evaluation_results/3_800.png Graphic file (type png)
+<use ./chapters//../evaluation_results/3_800.png>
+Package pdftex.def Info: ./chapters//../evaluation_results/3_800.png  used on i
+nput line 27.
+(pdftex.def)             Requested size: 209.12683pt x 117.52129pt.
+<./chapters//../evaluation_results/3_500.png, id=331, 607.26875pt x 341.275pt>
+File: ./chapters//../evaluation_results/3_500.png Graphic file (type png)
+<use ./chapters//../evaluation_results/3_500.png>
+Package pdftex.def Info: ./chapters//../evaluation_results/3_500.png  used on i
+nput line 33.
+(pdftex.def)             Requested size: 209.12683pt x 117.52129pt.
+
+Overfull \hbox (2.4216pt too wide) in paragraph at lines 25--37
+[]$[]$ $[]$ 
+ []
+
+[19
+
+ <./chapters//../evaluation_results/3_800.png> <./chapters//../evaluation_resul
+ts/3_500.png>]
+<./chapters//../evaluation_results/4_800.png, id=341, 607.26875pt x 341.275pt>
+File: ./chapters//../evaluation_results/4_800.png Graphic file (type png)
+<use ./chapters//../evaluation_results/4_800.png>
+Package pdftex.def Info: ./chapters//../evaluation_results/4_800.png  used on i
+nput line 56.
+(pdftex.def)             Requested size: 209.12683pt x 117.52129pt.
+<./chapters//../evaluation_results/4_500.png, id=342, 607.26875pt x 341.275pt>
+File: ./chapters//../evaluation_results/4_500.png Graphic file (type png)
+<use ./chapters//../evaluation_results/4_500.png>
+Package pdftex.def Info: ./chapters//../evaluation_results/4_500.png  used on i
+nput line 62.
+(pdftex.def)             Requested size: 209.12683pt x 117.52129pt.
+
+Overfull \hbox (2.4216pt too wide) in paragraph at lines 54--66
+[]$[]$ $[]$ 
+ []
+
+[20
+
+ <./chapters//../evaluation_results/4_800.png> <./chapters//../evaluation_resul
+ts/4_500.png>]
+<./chapters//../evaluation_results/8_500_first10.png, id=353, 607.26875pt x 341
+.275pt>
+File: ./chapters//../evaluation_results/8_500_first10.png Graphic file (type pn
+g)
+<use ./chapters//../evaluation_results/8_500_first10.png>
+Package pdftex.def Info: ./chapters//../evaluation_results/8_500_first10.png  u
+sed on input line 86.
+(pdftex.def)             Requested size: 209.12683pt x 117.52129pt.
+<./chapters//../evaluation_results/16_500_first10.png, id=354, 607.26875pt x 34
+1.275pt>
+File: ./chapters//../evaluation_results/16_500_first10.png Graphic file (type p
+ng)
+<use ./chapters//../evaluation_results/16_500_first10.png>
+Package pdftex.def Info: ./chapters//../evaluation_results/16_500_first10.png  
+used on input line 92.
+(pdftex.def)             Requested size: 209.12683pt x 117.52129pt.
+
+Overfull \hbox (2.4216pt too wide) in paragraph at lines 84--96
+[]$[]$ $[]$ 
+ []
+
+) (./chapters/4_fazit.tex [21
+
+ <./chapters//../evaluation_results/8_500_first10.png> <./chapters//../evaluati
+on_results/16_500_first10.png>]
 chapter 4.
-) (./chapters/5_fazit.tex [19
-
-]
-chapter 5.
-) (./thesis.bbl [20
+) (./thesis.bbl [22
 
 ]
 chapter without number
-) (./appendix/example_appendix.tex [21
+) (./appendix/example_appendix.tex [23
 
 ]
 chapter A.
 )
 No file thesis.gls.
-(../style/statement_ie.tex [22
+(../style/statement_ie.tex [24
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 4
 .
  (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [23
+) [25
 
 ]) (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -1711,15 +1779,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 34570 strings out of 479383
- 701980 string characters out of 5875830
- 1226825 words of memory out of 5000000
- 50843 multiletter control sequences out of 15000+600000
+ 34647 strings out of 479383
+ 704152 string characters out of 5875830
+ 1226809 words of memory out of 5000000
+ 50908 multiletter control sequences out of 15000+600000
  433577 words of font info for 81 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  109i,19n,111p,10634b,970s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1739,10 +1804,10 @@ b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/t
 exmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts
 /type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/u
 hvr8a.pfb>
-Output written on thesis.pdf (30 pages, 963617 bytes).
+Output written on thesis.pdf (32 pages, 1067560 bytes).
 PDF statistics:
- 515 PDF objects out of 1000 (max. 8388607)
- 433 compressed objects within 5 object streams
- 94 named destinations out of 1000 (max. 500000)
- 417 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 576 PDF objects out of 1000 (max. 8388607)
+ 480 compressed objects within 5 object streams
+ 102 named destinations out of 1000 (max. 500000)
+ 471 words of extra memory for PDF output out of 10000 (max. 10000000)
 
