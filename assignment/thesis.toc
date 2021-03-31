@@ -32,5 +32,4 @@
 \contentsline {chapter}{\numberline {4}Fazit}{22}{chapter.4}%
 \contentsline {chapter}{\nonumberline Literaturverzeichnis}{23}{chapter*.25}%
 \contentsline {chapter}{\numberline {A}Anhang}{24}{appendix.A}%
-\contentsline {chapter}{Selbstständigkeitserklärung}{25}{appendix.A}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
